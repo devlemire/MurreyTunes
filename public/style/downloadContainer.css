@@ -52,18 +52,27 @@
 }
 
 #email-match {
-  margin-top: 10px;
+  width: auto;
+  height: auto;
   display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
 }
 
 #songs-sent {
-  margin-top: 10px;
+  width: auto;
+  height: auto;
   display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
 }
 
 #in-progress {
-  margin-top: 10px;
+  width: auto;
+  height: auto;
   display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
 }
 
 @media(min-width: 800px) {
@@ -72,6 +81,18 @@
   }
 
   #download-item {
+    font-size: 18px;
+  }
+
+  #email-match {
+    font-size: 18px;
+  }
+
+  #songs-sent {
+    font-size: 18px;
+  }
+
+  #in-progress {
     font-size: 18px;
   }
 }

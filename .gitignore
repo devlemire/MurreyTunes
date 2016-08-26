@@ -1,4 +1,4 @@
 /private/server/media
 /private/server/config
 node_modules
-
+node-debug.log

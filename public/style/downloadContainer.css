@@ -70,4 +70,8 @@
   #download-view-container {
     width: 50%;
   }
+
+  #download-item {
+    font-size: 18px;
+  }
 }

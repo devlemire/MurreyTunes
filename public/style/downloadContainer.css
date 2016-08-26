@@ -7,10 +7,11 @@
 }
 
 #download-item {
-  width: auto;
+  width: 85%;
   height: auto;
   display: inline-block;
   margin-top: 10px;
+  font-size: 13px;
 }
 
 #download-view-container {

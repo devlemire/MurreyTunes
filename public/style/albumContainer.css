@@ -1,0 +1,42 @@
+.album-container-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.album-container-wrapper:hover {
+  cursor: pointer;
+  border-right: 1px solid #BDD4E7;
+}
+
+  .album-container-left {
+    width: 30%;
+    height: 100%;
+  }
+
+  .album-container-right {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  /*.text-desc {
+    display: none;
+    font-size: .7rem;
+    color: #8693AB;
+    margin-bottom: 5px;
+    width: 98%;
+  }*/
+
+  .text-album {
+    margin-bottom: 10px;
+  }
+
+/*@media(min-width: 800px) {
+  .text-desc {
+    display: flex;
+  }
+}*/

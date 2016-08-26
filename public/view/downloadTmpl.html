@@ -1,0 +1,13 @@
+<div id="download-wrapper">
+  <div id="download-view-container">
+    <p class="text-dec" id="download-item">Your songs are ready to be emailed to you.</p>
+    <input class="text-dec" type="email" id="email" ng-model="email.email" placeholder="Email Address" />
+    <input class="text-dec" type="email" id="confirm-email" ng-model="email.confirm" placeholder="Confirm Email Address" />
+    <button ng-click="emailConsumer(email)" class="text-dec" id="email-btn" ng-disabled="inProgress || emailSent">Email</button>
+
+    <!-- ADD STATUS MESSAGES FOR USER EXPERIENCE -->
+    <p ng-show="!emailMatch" class="text-dec" id="email-match">Emails do not match. Please try again.</p>
+    <p ng-show="inProgress" class="text-dec" id="in-progress">Attempting to email you, please wait...</p>
+    <p ng-show="songsSent" class="text-dec" id="songs-sent">Your purchased media has been successfully emailed to you.</p>
+  </div>
+</div>

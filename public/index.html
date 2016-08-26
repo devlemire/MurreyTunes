@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+	<head>
+		<!--BASE TO REMOVE # FROM URL-->
+		<!-- <base href="/"> -->
+		<!--TITLE-->
+		<title>MurreyTunes</title>
+
+		<!--METAS-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+
+	  <!--FONTS-->
+	  <link href='https://fonts.googleapis.com/css?family=Pacifico|Quicksand' rel='stylesheet' type='text/css'>
+	  <!--
+	    font-family: 'Pacifico', sans-serif;
+	    font-family: 'Quicksand', sans-serif;
+	  -->
+
+		<!--STYLES-->
+		<link rel="stylesheet" href="./style/reset.css" />
+		<link rel="stylesheet" href="./style/main.css" />
+	  <link rel="stylesheet" href="./style/home.css" />
+	  <link rel="stylesheet" href="./style/songContainer.css" />
+		<link rel="stylesheet" href="./style/cart.css" />
+		<link rel="stylesheet" href="./style/albums.css" />
+		<link rel="stylesheet" href="./style/albumContainer.css" />
+		<link rel="stylesheet" href="./style/albumView.css" />
+		<link rel="stylesheet" href="./style/downloadContainer.css" />
+
+		<!--COMPONENT STYLES-->
+		<link rel="stylesheet" href="./bower_components/ng-dialog/css/ngDialog.css" />
+		<link rel="stylesheet" href="./bower_components/ng-dialog/css/ngDialog-theme-default.css" />
+		<!-- <link rel='stylesheet' href="./bower_components/perfect-scrollbar/css/perfect-scrollbar.css" /> -->
+	</head>
+
+	<body>
+
+    <header>
+      <div id="header-left-container">
+        <h1 ui-sref="home" id="header-title">MurreyTunes</h1>
+        <p id="header-desc">Vibrant, Explosive, Original Music</p>
+      </div>
+
+      <!--MOBILE MENU-->
+      <img toggle-nav ng-click="showNav()" id="mobile-menu-img" src="./media/menu.png" width="30px" height="30px"/>
+			<ul id="mobile-menu-nav" class="text-dec" toggle-nav>
+				<li id="close-menu-nav-btn" ng-click="closeNav()">X</li>
+				<li ng-click="closeNav()" ui-sref='home'>Albums</li>
+        <li ng-click="closeNav()" ui-sref='songs'>Songs</li>
+        <li ng-click="closeNav()" ui-sref='cart'>Cart</li>
+      </ul>
+      <!--DESKTOP MENU-->
+      <ul id="desktop-menu-nav" class="text-dec">
+        <li ui-sref='home'>Albums</li>
+				<li ui-sref='songs'>Songs</li>
+        <li ui-sref='cart'>Cart</li>
+      </ul>
+    </header>
+
+    <main ng-controller="provider">
+      <ui-view></ui-view>
+    </main>
+
+    <footer>
+      <p class="text-dec">Copyright (c) Richard Murrey 2016  All Rights Reserved.
+    </footer>
+
+		<!--FRAMEWORK-->
+		<script src="./script/framework/angular.js"></script>
+	  <!--LIBRARY-->
+	  <script src="./script/library/ui-router.js"></script>
+		<script src="./script/library/jquery.js"></script>
+		<script src="https://checkout.stripe.com/checkout.js"></script>
+		<!-- <script src="./script/jquery.js"></script> -->
+		<!--COMPONENT-->
+		<script src="./bower_components/angular-audio/app/angular.audio.js"></script>
+		<script src="./bower_components/ng-dialog/js/ngDialog.js"></script>
+		<script src="./bower_components/angular-stripe/release/angular-stripe.js"></script>
+		<!-- <script src="./bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+		<script src="./bower_components/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+		<script src="./script/ps.js"></script> -->
+	  <!--APP-->
+	  <script src="./app/app.js"></script>
+	  <!--CONTROLLER | SERVICE | DIRECTIVE-->
+		<script src="./app/service/fileLocations.js"></script>
+		<script src="./app/service/albums.js"></script>
+		<script src="./app/service/songs.js"></script>
+	  <script src="./app/service/mediaLoading.js"></script>
+		<script src="./app/service/cart.js"></script>
+		<script src="./app/controller/ctrl.js"></script>
+		<script src="./app/controller/albumViewCtrl.js"></script>
+	  <script src="./app/directive/songContainer.js"></script>
+		<script src="./app/directive/cartItemContainer.js"></script>
+		<script src="./app/directive/toggleMobileNav.js"></script>
+		<script src="./app/directive/albumContainer.js"></script>
+		<script src="./app/directive/stripePayment.js"></script>
+		<script src="./app/service/stripeSrvc.js"></script>
+		<script src="./app/controller/provider.js"></script>
+		<script src="./app/controller/paid.js"></script>
+		<script src="./app/service/email.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,47 @@
+#albums-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  #albums-container {
+    width: 90%;
+    height: 90%;
+    background: #212227;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+    #albums-header-container {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #albums-main-container {
+      width: 90%;
+      height: 87%;
+      /*overflow: hidden;
+      position: relative;*/
+
+    }
+
+      #album {
+        width: 100%;
+        height: 90px;
+        margin-bottom: 10px;
+      }
+
+@media(min-width: 800px) {
+  #albums-container {
+    width: 50%;
+  }
+}

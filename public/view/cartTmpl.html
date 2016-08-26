@@ -1,0 +1,17 @@
+<div id="cart-wrapper">
+  <section id="cart">
+    <div id="cart-header-container">
+      <p class="text-dec">Your Cart</p>
+    </div>
+
+    <div id="cart-container">
+      <cart-item ng-repeat="i in cart" data="i"></cart-item>
+    </div>
+
+    <div id="cart-footer-container">
+      <p class="text-dec">Total: ${{total}}</p>
+      <!-- <button ng-click="checkout()" id="checkout-btn"><p class="text-dec">Checkout</p></button> -->
+      <stripe-payment price="total"></stripe-payment>
+    </div>
+  </section>
+</div>

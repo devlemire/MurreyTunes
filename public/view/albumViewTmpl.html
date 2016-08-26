@@ -1,0 +1,12 @@
+<div id="album-view-wrapper">
+  <section id="album-view-container">
+    <div id="album-view-header-container">
+      <p id="album-title" class="text-dec">{{data.album}}</p>
+      <p id="album-desc" class="text-dec">{{data.desc}}</p>
+    </div>
+
+    <div id="album-view-main-container">
+      <song-container ng-repeat="i in songs track by $index" data="i"></song-container>
+    </div>
+  </section>
+</div>

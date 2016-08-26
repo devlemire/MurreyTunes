@@ -1,0 +1,23 @@
+<div id="music-search-wrapper">
+  <section id="music-search">
+    <div id="music-search-top">
+      <p class="text-dec">{{url}}</p>
+      <h1 id="music-search-title" class="text-dec">Search</h1>
+      <!-- <input id="search-text" ng-model="search[selectedSearch]" ng-init="search = {}; selectedSearch='song'"></input> -->
+      <input ng-click="test()" id="search-text" ng-model="search.song"></input>
+    </div>
+
+    <!-- <div id="music-search-bottom">
+        <input class="search-checkboxes" type="radio" ng-model="selectedSearch" value="song" ng-click="clearVal()"><p class="text-dec">Song Name</p></input>
+        <input class="search-checkboxes" type="radio" ng-model="selectedSearch" value="album" ng-click="clearVal()"><p class="text-dec">Album</p></input>
+    </div> -->
+  </section>
+</div>
+
+<div id="music-list-wrapper">
+  <section id="music-list">
+    <p ng-hide="search" ng-show="search.song == '' || !search" id="empty-search" class="text-dec">Search for some awesome music!<br> Checkout our best sellers below!</p>
+    <song-container ng-hide="search" ng-show="search.song == '' || !search" id="top-hits" ng-repeat="i in songs | limitTo: 10" data="i"></song-container>
+    <song-container ng-hide="search.song == '' || !search" ng-repeat="i in songs | filter: search | limitTo: 10" data="i"></song-container>
+  </section>
+</div>

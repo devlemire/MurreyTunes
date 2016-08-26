@@ -1,0 +1,155 @@
+/* --- GLOBAL CSS --- */
+.text-dec {
+  color: #BDD4E7;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.button-dec {
+  color: #BDD4E7;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background: #8693AB;
+}
+/* --- GLOBAL CSS --- */
+
+
+/* --- HEADER --- */
+header {
+  width: 100%;
+  height: 80px;
+  background: #212227;
+  position: relative;
+}
+
+  #header-left-container {
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+    #header-title {
+      font-family: 'Pacifico', sans-serif;
+      font-size: 30px;
+      color: #BDD4E7;
+      cursor: pointer;
+    }
+
+    #header-desc {
+      font-size: 13px;
+      margin-top: 10px;
+      color: #AAB9CF;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    #mobile-menu-img {
+      position: absolute;
+      right: 20px;
+      top: 25px;
+    }
+
+    #mobile-menu-img:hover {
+      cursor: pointer;
+    }
+
+    #mobile-menu-nav {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      top: 0;
+      left: 0;
+      background-color: #212227;
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+      #close-menu-nav-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        margin-left: 50px;
+      }
+
+      #mobile-menu-nav li {
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #BDD4E7;
+        display: block;
+        transition: 0.3s
+      }
+
+    #desktop-menu-nav {
+      display: none;
+    }
+
+    #desktop-menu-nav li {
+      font-size: 18px;
+      display: inline-block;
+      margin-right: 10px;
+      padding-bottom: 5px
+    }
+
+    #desktop-menu-nav li:hover {
+      cursor: pointer;
+      border-bottom: 1px solid #BDD4E7;
+    }
+/* --- HEADER --- */
+
+/* --- MAIN --- */
+main {
+  width: 100%;
+  height: 100vh;
+  background: #8693AB;
+}
+/* --- MAIN --- */
+main {
+  width: 100%;
+  height: 100vh;
+  background: #8693AB;
+}
+/* --- FOOTER --- */
+footer {
+  width: 100%;
+  height: 80px;
+  background: #212227;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  footer p {
+    font-size: 13px;
+    clear: both;
+  }
+
+/* --- FOOTER --- */
+
+/* --- MEDIA QUERIES --- */
+@media (min-width: 530px) {
+  #header-desc {
+    font-size: 18px;
+  }
+
+  #mobile-menu-img {
+    display: none;
+  }
+
+  #desktop-menu-nav {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+}
+/* --- MEDIA QUERIES --- */

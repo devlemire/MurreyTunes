@@ -1,0 +1,13 @@
+<div class="song-container-wrapper">
+  <section class="song-container">
+    <div class="song-img-container" >
+      <img class="cover-img" ng-click="sound.paused ? sound.play() : sound.pause()" ng-init="imgsrc=data.cover" ng-mouseover="imgsrc='./media/play-btn.png'" ng-mouseleave="imgsrc=data.cover" ng-src="{{imgsrc}}" width="90px" height="90px" />
+    </div>
+
+    <div class="information-container" ng-click="reduceCart()">
+      <p class="text-dec album-text">Album: {{data.album}}</p>
+      <p class="text-dec song-text">Song: {{data.song}}</p>
+      <p class="text-dec year-text">Price: ${{data.price}}</p>
+    </div>
+  </section>
+</div>

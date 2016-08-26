@@ -5,7 +5,7 @@ angular
     this.email = function(data) {
       return $http({
         method: 'POST',
-        url: 'http://localhost:4040/api/email',
+        url: '/api/email',
         data: data
       });
     };

@@ -4,7 +4,7 @@ angular
     this.charge = function(token) {
       return $http({
         method: 'POST',
-        url: 'http://localhost:4040/api/charge',
+        url: '/api/charge',
         data: token
       });
     };

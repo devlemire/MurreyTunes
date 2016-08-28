@@ -34,13 +34,14 @@ app.post('/api/charge', function(req,res) {
 
 app.post('/api/email', function(req, res) {
   // setup e-mail data with unicode symbols
+  console.log('INCOMING EMAIL PREP, SONGS:', req.body.songs);
   var email = req.body.email;
   var links = [];
   for(var i in req.body.songs) {
     links.push({path: req.body.songs[i].download});
   }
 
-  console.log('LINKS', links);
+  console.log('DOWNLOAD LINKS', links);
 
   var mailOptions = {
       from: '"MurreyTunes" <richardmurreytunes@gmail.com>', // sender address

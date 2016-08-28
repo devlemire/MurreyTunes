@@ -8,7 +8,8 @@ angular
       {
         album: "Bill & Rose",
         cover: fileLocations.COVER_LOCATION_billAndRose,
-        desc: "Country love songs dedicated to rose and bill."
+        desc: "Country love songs dedicated to rose and bill.",
+        download: fileLocations.DOWNLOAD_LOCATION_billAndRose + "bill-and-rose.zip"
       },
       {
         album: "Blooze",

@@ -4,10 +4,11 @@
       <img ng-init="imgsrc=data.cover" ng-src="{{imgsrc}}" width="90px" height="90px" />
     </div>
 
-    <div class="cart-item-info-container" ng-click="reduceCart()">
+    <div class="cart-item-info-container">
       <p class="text-dec album-text">Album: {{data.album}}</p>
       <p ng-show="data.song" class="text-dec song-text">Song: {{data.song}}</p>
       <p class="text-dec year-text">Price: ${{data.price}}</p>
+      <p class="text-dec remove-from-cart-button" ng-click="reduceCart()">X</p>
     </div>
   </section>
 </div>

@@ -11,12 +11,8 @@
   width: 90%;
   height: 100%;
   display: flex;
+  position: relative;
 }
-
-  .cart-item-img-container {
-    width: auto;
-    height: auto;
-  }
 
 .cart-item-info-container {
   width: 65%;
@@ -48,6 +44,18 @@
   .add-song-to-cart-button:hover {
     cursor: pointer;
   }
+
+.remove-from-cart-button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: auto;
+  height: auto;
+}
+
+.remove-from-cart-button:hover {
+  cursor: pointer;
+}
 
 /*.add-to-cart-container {
   width: 25%;

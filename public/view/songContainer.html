@@ -4,10 +4,13 @@
       <img class="cover-img" ng-click="songController()" ng-init="imgsrc=data.cover" ng-mouseover="imgsrc='./media/play-btn.png'" ng-mouseleave="imgsrc=data.cover" ng-src="{{imgsrc}}" width="90px" height="90px" />
     </div>
 
-    <div class="information-container"  ng-click="addToCart()">
+    <div class="information-container">
       <p class="text-dec song-text">Song: {{data.song}}</p>
       <p class="text-dec album-text">Album: {{data.album}}</p>
-      <p class="text-dec">Price: ${{data.price}}</p>
+      <div class="price-section">
+        <p class="text-dec price-text">Price: ${{data.price}}</p>
+        <div ng-click="addToCart()" class="add-song-to-cart-button"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+      </div>
     </div>
   </section>
 </div>

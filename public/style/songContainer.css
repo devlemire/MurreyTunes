@@ -44,6 +44,16 @@
     margin-bottom: 10px;
   }
 
+  .price-text {
+    display: inline-block;
+  }
+
+  .add-song-to-cart-button {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+  }
+
 /*.add-to-cart-container {
   width: 25%;
   height: 100%;

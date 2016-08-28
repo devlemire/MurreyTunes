@@ -54,5 +54,11 @@ angular
       }
     }();
 
+    this.assignCartIDs = function() {
+      for(var i = 0; i < albums.length; i++) {
+        albums[i].cartID = "album"+i;
+      }
+    }();
+
     this.albums = albums;
   });

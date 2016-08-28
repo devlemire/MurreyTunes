@@ -47,11 +47,14 @@ angular
         });
 
         $scope.informAdd= function() {
-          ngDialog.open({ template: './view/addToCart.html', className: 'ngdialog-theme-default' });
+          $scope.type = "Song";
+          ngDialog.open({ template: './view/addToCart.html', className: 'ngdialog-theme-default', scope: $scope });
         };
 
         $scope.informAlready = function() {
-          ngDialog.open({ template: './view/alreadyInCart.html', className: 'ngdialog-theme-default' });
+          $scope.type = "Song";
+          console.log($scope.type);
+          ngDialog.open({ template: './view/alreadyInCart.html', className: 'ngdialog-theme-default', scope: $scope });
         };
 
         $scope.addToCart = function() {

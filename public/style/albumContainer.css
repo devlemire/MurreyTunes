@@ -23,6 +23,12 @@
     margin-left: 10px;
   }
 
+  .add-album-to-cart-button {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+  }
+
   /*.text-desc {
     display: none;
     font-size: .7rem;

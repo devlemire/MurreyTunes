@@ -58,6 +58,7 @@ angular
         };
 
         $scope.addToCart = function() {
+          console.log($scope.data);
           var temp = cart.updateCart($scope.data, $scope.data.cartID);
           if(temp) {
             $scope.informAdd();

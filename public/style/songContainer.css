@@ -15,7 +15,6 @@
 
 .song-container:hover {
   border-right: 2px solid #BDD4E7;
-  cursor: pointer;
 }
 
 .song-img-container {
@@ -26,6 +25,7 @@
   .cover-img:hover {
     opacity: 0.5;
     border: 1px solid white;
+    cursor: pointer;
   }
 
 .information-container {
@@ -53,6 +53,10 @@
     display: inline-block;
     color: white;
     font-size: 20px;
+  }
+
+  .add-song-to-cart-button:hover {
+    cursor: pointer;
   }
 
 /*.add-to-cart-container {

@@ -16,14 +16,8 @@ angular
       ngDialog.open({ template: './view/alreadyInCart.html', className: 'ngdialog-theme-default', scope: $scope });
     };
 
-    $scope.addAlbumToCart = function(data) {
-      // console.log(data);
-      // var albumID = data.albumID;
-      var temp = cart.updateCart($scope.data, $scope.data.cartID);
-      if(temp) {
-        $scope.informAdd();
-      } else {
-        $scope.informAlready();
-      }
+    $scope.addToCart = function(data) {
+      console.log(data);
+      var albumID = data.albumID;
     };
   });

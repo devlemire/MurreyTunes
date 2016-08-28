@@ -50,6 +50,15 @@
       height: 85%;
     }
 
+    .add-album-to-cart-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: white;
+      font-size: 25px;
+    }
+
+
 @media(min-width: 800px) {
   #album-view-container {
     width: 70%;

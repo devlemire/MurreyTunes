@@ -8,11 +8,37 @@ angular
       scope: {
         data: '=',
       },
-      controller: function($rootScope, $scope, ngAudio, ngDialog, cart, $state) {
+      controller: function($rootScope, $scope, ngAudio, ngDialog, cart, $state, $q) {
 
         if($scope.data.preview) {
           $scope.sound = ngAudio.load($scope.data.preview);
         }
+
+        $scope.songController = function() {
+          // $rootScope.$broadcast('pauseAll');
+          // setTimeout(function() {
+          //   console.log('IS PAUSED:', $scope.sound.paused);
+          //   if($scope.sound.paused) {
+          //     $scope.sound.play();
+          //   } else {
+          //     $scope.sound.stop();
+          //     $scope.sound = ngAudio.load($scope.data.preview);
+          //   }
+          // }, 100);
+            if($scope.sound.paused) {
+              $scope.sound.play();
+            } else {
+              $scope.sound.stop();
+              $scope.sound = ngAudio.load($scope.data.preview);
+            }
+        };
+
+        $rootScope.$on('pauseAll', function() {
+          if($scope.data.preview) {
+            $scope.sound.stop();
+            $scope.sound = ngAudio.load($scope.data.preview);
+          }
+        });
 
         $rootScope.$on("$stateChangeStart", function stopSong() {
           if($scope.data.preview) {

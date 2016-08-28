@@ -32,7 +32,8 @@ angular.module('app')
           var price = scope.price / 0.01;
           handler.open({
             name: 'Stripe Demo',
-            description: 'This is just a demo'
+            description: 'This is just a demo',
+            amount: price
           });
           e.preventDefault();
         });

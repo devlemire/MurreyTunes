@@ -27,6 +27,9 @@
     display: inline-block;
     font-size: 20px;
     color: white;
+    width: auto;
+    height: auto;
+    z-index: 1;
   }
 
   /*.text-desc {
